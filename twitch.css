@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-color: blue;
+}
+.jumbotron{
+          background-color: blue;
+}
+h1{
+    color: blue;
+    background-color:lightblue;
+
+}
+a{
+    color: aliceblue;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.online{
+    background-color: green;
+
+    text-shadow: 4px 4px 10px rgba(150, 150, 150, 1);
+}
+.offline{
+    background-color: red;
+opacity: 0.5;
+ 
+  text-shadow: 4px 4px 10px rgba(150, 150, 150, 1);
+
+}
+.username{
+    background-color: rgba(255,255,255,0.3);
+    text-align: center;
+}
+#contents{
+    text-align: left;
+}
