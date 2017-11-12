@@ -53,7 +53,7 @@ window.onload = function(){
                 newHTML.style = 'background-image: url(' + bannerImg + ')';
 
 
-                newHTML.innerHTML = '<div class = "col-4"><a href="' + channelUrl + 'target="_blank"' + '><img class = "logo" src="'+ logo +'" alt=""></div><div class = "col-4 align-self-center"><h2 class="username rounded p-2 ">' + userName + '</h2></a></div>';
+                newHTML.innerHTML = '<div class = "col-4"><a href="' + channelUrl + '" target="_blank"' + '><img class = "logo" src="'+ logo +'" alt=""></div><div class = "col-4 align-self-center"><h2 class="username rounded p-2 ">' + userName + '</h2></a></div>';
 
 
 
