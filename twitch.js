@@ -21,7 +21,7 @@ window.onload = function(){
     console.log('working');
     users.forEach(function(user){
 
-        var stream, userName, channelUrl, logo, bannerImg;
+        var stream, game, userName, channelUrl, logo, bannerImg;
 
         var url = "https://wind-bow.glitch.me/twitch-api/streams/" + user ;
 
@@ -29,8 +29,10 @@ window.onload = function(){
 
             if(data.stream === null){
                 stream = "offline";
+                game = "offline"
             } else {
                 stream = "online";
+                game = data.stream.game;
             }
 
             var url = "https://wind-bow.glitch.me/twitch-api/channels/" + user ;
@@ -49,11 +51,11 @@ window.onload = function(){
                 var oldHTML = document.getElementById("contents");
 
                 var newHTML = document.createElement('div');
-                newHTML.className = 'row mb-2 rounded p-2 ' + stream;
+                newHTML.className = 'row mb-3 boxshadow rounded p-2 ' + stream;
                 newHTML.style = 'background-image: url(' + bannerImg + ')';
 
 
-                newHTML.innerHTML = '<div class = "col-4"><a href="' + channelUrl + '" target="_blank"' + '><img class = "logo" src="'+ logo +'" alt=""></div><div class = "col-4 align-self-center"><h2 class="username rounded p-2 ">' + userName + '</h2></a></div>';
+                newHTML.innerHTML = '<div class = "col-3"><a href="' + channelUrl + '" target="_blank"' + '><img class = "logo" src="'+ logo +'" alt=""></div><div class = "col-6 align-self-center"><h2 class="username rounded p-2 ">' + userName + ' (' + game + ')</h2></a></div>';
 
 
 

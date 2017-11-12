@@ -1,14 +1,14 @@
 body{
     text-align: center;
-    background-color: blue;
+    background-color: darkcyan;
 }
 .jumbotron{
-          background-color: blue;
+          background-color: darkcyan;
 }
 h1{
     color: blue;
     background-color:lightblue;
-
+  text-shadow: 4px 4px 10px rgba(150, 150, 150, 1);
 }
 a{
     color: aliceblue;
@@ -35,4 +35,7 @@ opacity: 0.5;
 }
 #contents{
     text-align: left;
+}
+.boxshadow{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
